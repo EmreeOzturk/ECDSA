@@ -26,7 +26,7 @@ Eliptik eğrinin temel özelliği noktanın(x,y) belli bir kural kullanılarak p
 1- k.G = G yani G’yi k ile çarpmak bir işe yaramaz k.G noktası G ile çakışır bu durumda k tahmin edebileceğiniz gibi 1dir. Normal sayılarla olan benzetme burada çalışır.
 
 2- k.G G ile çakışmaz ama yine de eğri üzerinde yer alır. Nokta bir şekilde eğri üzerinde kayar. Şekil 2, belirli bir P noktasının, onu 1'den 7'ye kadar tam sayılarla çarptığımızda, y²=x³+7 eğrisi boyunca nasıl kaydığını gösterir.
-
+![Figure2](./img/2_C3opG0lICVPcuOgcVL4V9A.png)
 
 3- k.G yoktur yani mevcut değildir. Bunun anlamı bu nokta için koordinat hesaplama formülünde 0'a bölünme olduğunu söyler. Bunun için özel bir terim var “Özdeşlik Noktası”. Eğer k.G yoksa özdeşlik noktasına eşit olduğunu söyleyebiliriz ve k.G = 〇 olarak gösteririz.
 
@@ -60,9 +60,11 @@ Son olarak bu işlemleri Javascript kullanarak nasıl yapabiliriz bir bakalım. 
 
 1- Kurulum: Nodejs bilgisayarınızda olması lazım olduğunu var sayarak ilerliyorum.
 
+```
 npm install starkbank-ecdsa
+```
 kurulumu yaptıktan sonra kodumuza geçelim
-
+```
 //Baslangıç ayarlarını yap
 const ellipticcurve = require("starkbank-ecdsa");
 const Ecdsa = ellipticcurve.Ecdsa;
@@ -78,4 +80,5 @@ let imza= Ecdsa.sign(mesaj, privateKey);
 
 // Imzanın geçerliligini dogrula
 console.log(Ecdsa.verify(mesaj, imza, publicKey));
+```
 Terminalde kodumuzu node komutu ile çalıştırıyoruz ve true sonucunu alıyoruz. Işte bu kadar kolay starkbank sağolsun :)
