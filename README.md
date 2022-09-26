@@ -17,7 +17,7 @@ ECDSA’ya dönecek olursak, işte bu bahsettiğim dijital imzalarda kullanılan
 ECDSA iki şeyi temel alır biri eliptik eğriler diğeri modüler aritmetik ve Eliptik Eğri Ayrık Logaritma Problemi adı verilen matematiksel bir özellikten yararlanan bir algoritmadır. Bu özellik, günümüzün bilgisayar yeteneklerine sahip bir ortak anahtardan özel bir anahtar oluşturmayı imkansız hale getirerek, dijital imza işlemi için kullanışlı bir algoritma haline getirir.
 
 Eliptik bir eğri, y²=x³+a∙x+b denklemi ile belirlenen bir düzlem üzerinde düzgün bir eğridir. Örneğin, Bitcoin ve Ethereum, y²=x³+7 eğrisini kullanır.
-
+![Figure1](./img/1_1a1OMJrRBMgzg7Sr7gKfNg.png)
 
 Eliptik eğrinin temel özelliği noktanın(x,y) belli bir kural kullanılarak pozitif tam sayılarla çarpılabilmesidir. Yani bu noktayı bir sayı ile çarpma kuralı onun koordinatlarını yeniden hesaplanmak için kullanılır.
 
